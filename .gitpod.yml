@@ -9,6 +9,7 @@ tasks:
       echo $DBT_SERVICE_ACCOUNT > /workspace/profiles/service_account.json
       dbt debug
       dbt deps
+
 vscode:
   extensions:
     - ms-python.python
