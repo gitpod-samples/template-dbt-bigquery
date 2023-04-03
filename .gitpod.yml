@@ -1,0 +1,33 @@
+
+image:
+  file: .gitpod.Dockerfile
+checkoutLocation: '.'
+
+tasks:
+  - name: dbt
+    command: |
+      echo $DBT_SERVICE_ACCOUNT > /workspace/profiles/service_account.json
+      dbt debug
+      dbt deps
+vscode:
+  extensions:
+    - ms-python.python
+    - mechatroner.rainbow-csv
+    - innoverio.vscode-dbt-power-user
+    - sqlfluff.vscode-sqlfluff
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
+    - samuelcolvin.jinjahtml
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: false
+    addCheck: true
+    addComment: false
+    addBadge: false
