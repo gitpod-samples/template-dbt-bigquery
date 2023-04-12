@@ -17,7 +17,7 @@ Please check the [dbt configuration](https://docs.getdbt.com/reference/profiles.
 
 Click the button below to start a new development environment:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-dbt-bigquery)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-samples/template-dbt-bigquery)
 
 ## Get Started With Your Own Project
 
