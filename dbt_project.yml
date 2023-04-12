@@ -3,7 +3,7 @@ name: 'gitpod_sample'
 config-version: 2
 version: '1.0.0'
 
-profile: 'gitpod_sample'
+profile: 'default'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
