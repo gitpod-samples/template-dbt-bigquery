@@ -1,6 +1,6 @@
 # A dbt template on Gitpod
 
-This is a [dbt](https://www.getdbt.com/) template configured for ephemeral cloud development environments on [Gitpod](https://www.gitpod.io/).
+This is a [dbt](https://www.getdbt.com/) template configured for ephemeral cloud development environments on [Gitpod](https://www.gitpod.io/). The project is based on the famous [jaffle_shop example](https://github.com/dbt-labs/jaffle_shop/).
 
 ## Connecting to BigQuery
 
