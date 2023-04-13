@@ -19,6 +19,12 @@ Click the button below to start a new development environment:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-samples/template-dbt-bigquery)
 
+The workspace will then try to connect to your data warehose. To use the models in this example project you need to run the following commands.
+
+1. `dbt seed`: to materialize the CSVs
+2. `dbt run`: to run the models
+3. `dbt test`: to test all models
+
 ## Get Started With Your Own Project
 
 ### A new project
