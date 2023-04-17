@@ -11,4 +11,4 @@ USER gitpod
 COPY requirements.txt /tmp
 RUN cd /tmp && pip install -r requirements.txt
 
-RUN echo 'DBT_PROFILES_DIR="$GITPOD_REPO_ROOT/profiles"' > $HOME/.bashrc.d/500-dbt
+ENV DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles
