@@ -1,12 +1,11 @@
 
 image:
   file: .gitpod.Dockerfile
-checkoutLocation: '.'
 
 tasks:
   - name: dbt
     command: |
-      echo $DBT_SERVICE_ACCOUNT > /workspace/profiles/service_account.json
+      echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
       dbt debug
       dbt deps
 
