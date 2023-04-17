@@ -10,3 +10,5 @@ USER gitpod
 
 COPY requirements.txt /tmp
 RUN cd /tmp && pip install -r requirements.txt
+
+ENV DBT_PROFILES_DIR=$PWD/profiles/
