@@ -4,9 +4,8 @@ image:
 
 tasks:
   - name: dbt
-    init: |
-      gp env DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles/
-      eval $(gp env -e)
+    before: |
+      echo 'export DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles/' >> ~/.bashrc
     command: |
       echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
       dbt debug
