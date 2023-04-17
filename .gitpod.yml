@@ -5,8 +5,9 @@ image:
 tasks:
   - name: dbt
     command: |
+      export DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles/
       echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
-      dbt debug --profiles-dir $GITPOD_REPO_ROOT/profiles/
+      dbt debug
       dbt deps
 
 vscode:
