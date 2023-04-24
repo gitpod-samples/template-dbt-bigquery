@@ -15,7 +15,7 @@ tasks:
   - name: generate docs
     command: |
       dbt docs generate
-      dbt docs serve --no-server --port 8080
+      dbt docs serve --no-browser --port 8080
     openMode: split-right
 
 vscode:
