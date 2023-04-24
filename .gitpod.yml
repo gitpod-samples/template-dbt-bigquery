@@ -1,13 +1,22 @@
-
 image:
   file: .gitpod.Dockerfile
 
+ports:
+  - port: 8080
+    onOpen: notify
+
 tasks:
-  - name: dbt
+  - name: connect
     command: |
       echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
       dbt debug
       dbt deps
+    openMode: split-right
+  - name: generate docs
+    command: |
+      dbt docs generate
+      dbt docs serve --no-server --port 8080
+    openMode: split-right
 
 vscode:
   extensions:
