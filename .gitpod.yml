@@ -3,7 +3,7 @@ image:
 
 ports:
   - port: 8080
-    onOpen: notify
+    onOpen: open-browser
 
 tasks:
   - name: connect
