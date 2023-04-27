@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
+image: gitpod/workspace-python:latest
 
 ports:
   - port: 8080
@@ -7,13 +6,17 @@ ports:
 
 tasks:
   - name: connect
+    before: export DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles/
+    init: pip install -r requirements.txt
     command: |
       echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
       dbt debug
+      gp sync-done dbt-check
       dbt deps
     openMode: split-left
   - name: generate docs
     command: |
+      gp sync-await dbt-check
       dbt docs generate
       dbt docs serve --no-browser --port 8080
     openMode: split-right
