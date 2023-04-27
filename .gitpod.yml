@@ -6,8 +6,6 @@ ports:
 
 tasks:
   - name: connect
-    before: |
-      echo 'export DBT_PROFILES_DIR=$GITPOD_REPO_ROOT/profiles/' >> ~/.bashrc
     init: pip install -r requirements.txt
     command: |
       echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
