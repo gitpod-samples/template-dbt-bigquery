@@ -2,5 +2,4 @@ FROM gitpod/workspace-python:latest
 
 USER gitpod
 
-COPY requirements.txt /tmp
-RUN cd /tmp && pip install -r requirements.txt
+RUN pip install dbt-bigquery==1.4.0
