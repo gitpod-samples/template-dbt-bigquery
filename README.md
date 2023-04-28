@@ -35,7 +35,7 @@ In order to ensure that the setup works for your project, beware that we used Gi
 
 Alternatively, you can also make sure that the path is accessible in each terminal by setting a [terminal-specific Environment variable](https://www.gitpod.io/docs/configure/projects/environment-variables#task-terminal-specific-environment-variables) for each terminal you use, e.g. by running
 ```
-export DBT_PROFILES_DIR = ./profiles/
+export DBT_PROFILES_DIR=./profiles/
 ```
 at the top of each task section in the `.gitpod.yml`.
 
