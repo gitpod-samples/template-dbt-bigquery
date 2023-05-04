@@ -27,6 +27,8 @@ The validity of the dbt configuration will be tested inside the workspace. Run t
 2. `dbt run`: to run the models
 3. `dbt test`: to test all models
 
+If all commands run succesfully, you have completed the setup of a working dbt development environment on a BigQuery warehouse with Gitpod!🎉
+
 ## Get Started With Your Own Project
 
 ### A new project
