@@ -2,7 +2,7 @@
 
 This demo project showcases how to run [dbt](https://www.getdbt.com/)'s core module on top of a BigQuery warehouse inside a [Gitpod](https://www.gitpod.io/) Cloud Development Environment. The project is based on the well-known [jaffle_shop example](https://github.com/dbt-labs/jaffle_shop/).
 
-## Getting Started
+## Configuration
 
 In order to connect with BigQuery, the following environment variables need to be set inside inside the development environment:
 
