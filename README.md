@@ -35,14 +35,6 @@ If all commands run succesfully, you have completed the setup of a working dbt d
 
 Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
 
-Beware that we used Gitpod's [project-specific environment variables](https://www.gitpod.io/docs/configure/projects/environment-variables#project-specific-environment-variables) to store the path to the `.profiles.yml`. For this project to work in a new environment, we recommend you create a [Gitpod project](https://www.gitpod.io/docs/configure/projects) for it and set up the project variable `DBT_PROFILES_DIR` with the value `./profiles/`.
-
-Alternatively, you can also make sure that the path is accessible in each terminal by setting a [terminal-specific Environment variable](https://www.gitpod.io/docs/configure/projects/environment-variables#task-terminal-specific-environment-variables) for each terminal you use, e.g. by running
-```bash title=".gitpod.yml"
-export DBT_PROFILES_DIR=./profiles/
-```
-at the top of each task section in the `.gitpod.yml`.
-
 ### An existing project
 
 To get started with dbt on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) to any of your existing dbt projects. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
