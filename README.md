@@ -13,7 +13,7 @@ In order to connect with BigQuery, the following environment variables need to b
 
 The easiest way to achieve this is by setting [user-specific environment variables in Gitpod](https://gitpod.io/user/variables). Find out more about environment variables in Gitpod [here](https://www.gitpod.io/docs/configure/projects/environment-variables).
 
-The values of the environment variables are used inside dbt's `profiles.yml`. For more information about setting dbt with BigQuery, click [here](https://docs.getdbt.com/reference/warehouse-setups/bigquery-setup).
+The values of the environment variables are used inside dbt's `profiles.yml`. For more information about setting up dbt with BigQuery, click [here](https://docs.getdbt.com/reference/warehouse-setups/bigquery-setup).
 
 ## Next Steps
 
