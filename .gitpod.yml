@@ -8,7 +8,6 @@ ports:
 tasks:
   - name: connect
     command: |
-      echo $DBT_SERVICE_ACCOUNT > $GITPOD_REPO_ROOT/profiles/service_account.json
       dbt debug
       dbt deps
     openMode: split-left

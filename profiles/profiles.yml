@@ -4,9 +4,9 @@ default:
 
     dev:
       type: bigquery
-      method: service-account
+      method: service-account-json
       project: "{{ env_var('DBT_PROJECT') }}"
       dataset: "{{ env_var('DBT_DEV_DATASET') }}"
       threads: 4
-      keyfile: "{{ env_var('GITPOD_REPO_ROOT') }}/profiles/service_account.json"
+      keyfile_json: "{{ env_var('DBT_SERVICE_ACCOUNT') | as_native }}"
       location: "{{ env_var('DBT_LOCATION') }}"
